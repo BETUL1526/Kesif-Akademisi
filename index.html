@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keşif Akademisi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🏫 Keşif Akademisi</h1>
+    
+    <div id="character-selection">
+        <h2>Karakter Seç</h2>
+        <img src="erkek.jpg" class="character" onclick="selectCharacter('Erkek')" alt="Erkek">
+        <img src="kadin.jpg" class="character" onclick="selectCharacter('Kadın')" alt="Kadın">
+    </div>
+
+    <div id="game" style="display: none;">
+        <canvas id="gameCanvas"></canvas>
+        <button onclick="startMemoryGame()">🃏 Hafıza Kartı Oyna</button>
+        <div id="memoryGame" style="display: none;">
+            <h2>Hafıza Kartı Eşleştirme</h2>
+            <div id="cards"></div>
+            <button onclick="checkMemoryGame()">Kontrol Et</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+</html>
